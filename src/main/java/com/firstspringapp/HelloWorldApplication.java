@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * same as @Configuration @EnableAutoConfiguration @ComponentScan
  */
 @SpringBootApplication
-public class FirstSpringAppApplication {
+public class HelloWorldApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FirstSpringAppApplication.class, args);
+        SpringApplication.run(HelloWorldApplication.class, args);
         System.out.println("Hello World from BridgeLabz");
     }
 
