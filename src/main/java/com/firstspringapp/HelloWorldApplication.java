@@ -1,6 +1,7 @@
 package com.firstspringapp;
 
 import com.firstspringapp.component.DemoBean;
+import com.firstspringapp.component.EmployeeBean;
 import com.firstspringapp.controller.HelloRestController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +24,10 @@ public class HelloWorldApplication {
         DemoBean demoBean = context.getBean(DemoBean.class);
         logger.debug("Demo Bean = "+ demoBean);
         logger.debug(String.valueOf(context.getBean(HelloRestController.class)));
+        EmployeeBean employeeBean = context.getBean(EmployeeBean.class);
+        employeeBean.setEid(104);
+        employeeBean.setEname("Spring Framework guru");
+        employeeBean.showEmployeeDetails();
     }
 
 }
